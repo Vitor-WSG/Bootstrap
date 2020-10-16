@@ -2,4 +2,5 @@
     background-image: url(../img/vitrine.jpg);
     background-size: cover; /* centralizar o background */
     background-position: center; /* Centralizar o background */
+    color: white;
   }
