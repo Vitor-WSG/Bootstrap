@@ -10,8 +10,7 @@
 <body> 
     <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
         <a href="#" class="navbar-brand">Better</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">MENU
-        </button>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
          <div class="container"> <!-- Inicio .container -->          
             <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Inicio .collapse -->    
                 <ul class="navbar-nav mr-auto">
@@ -33,7 +32,8 @@
             </div> <!-- Fim .collapse -->
         </div> <!-- Fim .container -->
     </nav>
-    <main class="jumbotron"> <!-- A classe do jumbotron veio primeiro para sobrepor a margim da classe container -->
+    <main>
+    <section class="jumbotron"> <!-- A classe do jumbotron veio primeiro para sobrepor a margim da classe container -->
         <div class="container">
             <h1>Momentos perfeitos</h1>
             <p>Lorem ipsum dolor</p>
@@ -44,11 +44,80 @@
                 </span>
             </form>
         </div>
-        <section>
-            <h2>Imagens bonitas, lindas e perfeitas</h2>
-            <p>Lorem ipsum dolor emet aset</p>
+    </section>    
+        <section class="container"> <!-- A classe container centraliza o conteudo da tag -->
+            <h2 class="text-center">Imagens bonitas, lindas e perfeitas</h2>
+            <p class="text-center">Lorem ipsum dolor emet aset</p>
+        <div class="row"> <!-- INICIO .Essa classe=row coloca os elementos em linha -->
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3"> <!-- Essa classe a imagem ocupa 4 colunas em telas medias e 3 em telas grandes -->
+                <figure>
+                    <img class="img-fluid img-thumbnail" src="../projeto-better/img/girassois.jpg" alt="Girassois no campo"> <!-- a clase img-fluid deixa a imagem responsiva quando diminui a tela. -->
+                    <!-- A CLASSE img-thumbnail coloca as bordas redondas quando a tela diminui. -->
+                    <figcaption class="text-center">
+                        Girassois
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3">
+                <figure>
+                    <img class="img-fluid img-thumbnail" src="../projeto-better/img/garota-silhueta.jpg" alt="Silhueta garota">
+                    <figcaption class="text-center">
+                        Silhueta
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3">
+                <figure>
+                    <img class="img-fluid img-thumbnail" src="../projeto-better/img/mesa-designer.jpg" alt="Tipica mesa de um designer">
+                    <figcaption class="text-center">
+                        Mesa
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3">
+                <figure>
+                    <img class="img-fluid img-thumbnail" src="../projeto-better/img/pipoca.jpg" alt="Pipoca">
+                    <figcaption class="text-center">
+                        Pipoca
+                    </figcaption class="text-center">
+                </figure>
+            </a>
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3">
+                <figure>
+                    <img class="img-fluid img-thumbnail" src="../projeto-better/img/garota-feliz.jpg" alt="Mulher feliz">
+                    <figcaption class="text-center">
+                        Mulher Feliz
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3">
+                <figure>
+                    <img class="img-fluid img-thumbnail" src="../projeto-better/img/sunset.jpg" alt="Por do sol">
+                    <figcaption class="text-center">
+                        Por do sol
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3">
+                <figure>
+                    <img class="img-fluid img-thumbnail" src="../projeto-better/img/ciclista.jpg" alt="Ciclista">
+                    <figcaption class="text-center">
+                        Ciclista
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#" class="col-sm-6 col-md-4 col-lg-3">
+                <figure>
+                    <img class="img-fluid img-thumbnail" src="../projeto-better/img/cabra.jpg" alt="Cabrita">
+                    <figcaption class="text-center">
+                        Cabrita
+                    </figcaption>
+                </figure>
+            </a>
+        </div> <!-- Fim da div row para colocar os elementos em linha -->
         </section>
     </main>
+    
     <script src="../projeto-better/js/jquery.js"></script>
     <script src="../projeto-better/js/bootstrap.min.js"></script>
 </body>
